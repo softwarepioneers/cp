@@ -1,0 +1,31 @@
+{
+  "name": "hsoub-admin-panel",
+  "version": "1.0.0",
+  "description": "the admin panel that we're going to build for the course",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "watch": "./node_modules/.bin/node-sass assets/sass/styles.scss assets/css/main.css -w --output-style=compressed --source-map=true",
+    "commit": "npm run test && git add . && git commit -m",
+    "create": "node scripts/create.js",
+    "serve": "browser-sync start --server --directory --files *",
+    "start": " concurrently \"npm run serve\" \"npm run watch\"   "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://senadir@bitbucket.org/senadir/hsoub-admin-panel.git"
+  },
+  "author": "Nadir Seghir (Hsoub academy)",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/senadir/hsoub-admin-panel#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "handlebars": "^4.0.11",
+    "live-server": "^1.2.0",
+    "node-sass": "git+https://github.com/sass/node-sass.git",
+    "serve": "^6.4.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
