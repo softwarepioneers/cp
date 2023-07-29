@@ -1,0 +1,45 @@
+.c-tabs {
+  @include e-card;
+  width: 100%;
+  position: relative;
+}
+
+.c-tabs__controller {
+  display: flex;
+  overflow-x: auto;
+  position: static;
+  &:before {
+    content: "";
+    width: 100%;
+    pointer-events: none;
+    height: floor(($line-height * $font-base) + spacing("base") * 2) ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, white 20px, transparent 30px);
+  }
+}
+
+.c-tabs__tab {
+  text-align: center;
+  display: block;
+  padding: spacing() spacing("small");
+  border-bottom: 3px solid transparent;
+  white-space: pre;
+}
+
+.c-tabs__tab.is-active {
+  border-color: $color-primary;
+}
+
+.c-tabs--fullwidth .c-tabs__tab {
+  flex-grow: 1;
+}
+
+.c-tabs__tabarea {
+  display: none;
+}
+
+.c-tabs__tabarea.is-active {
+  display: block;
+}

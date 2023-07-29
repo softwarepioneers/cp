@@ -1,0 +1,63 @@
+$indicator-size: 10px;
+
+.c-actions {
+  @include e-card;
+  padding: 0 spacing("extra-small");
+  width: 100%;
+  list-style: none;
+}
+
+.c-action {
+  border-bottom: 1px solid rgba(darken($color-brand, 40%), 0.1);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: spacing("extra-small");
+  padding-top: spacing("extra-small") / 2;
+  padding-bottom: spacing("extra-small") / 2;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.c-action__title {
+  font-size: 14px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.c-action__link,
+.c-action__title {
+  margin-top: spacing("extra-small") / 2;
+  margin-bottom: spacing("extra-small") / 2;
+}
+.c-action__title:before {
+  content: "";
+  width: $indicator-size;
+  height: $indicator-size;
+  border-radius: $indicator-size / 2;
+  background-color: $color-brand;
+  display: block;
+  margin-left: spacing("base");
+}
+
+.c-actions--oneline {
+    .c-action {
+    flex-wrap: nowrap;
+  }
+  .c-action__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    display: block;
+    padding-right: $indicator-size + spacing("extra-small");
+    &:before {
+      position: absolute;
+      right: 0;
+      top: calc(50% - #{$indicator-size / 2});
+    }
+  }
+}

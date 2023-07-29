@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'icon';
+  src:
+    url('fonts/icon.ttf?nq9cff') format('truetype'),
+    url('fonts/icon.woff?nq9cff') format('woff'),
+    url('fonts/icon.svg?nq9cff#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.c-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c-icon--help:before {
+  content: "\e905";
+}
+.c-icon--settings:before {
+  content: "\e907";
+}
+.c-icon--dashboard:before {
+  content: "\e901";
+}
+.c-icon--product:before {
+  content: "\e911";
+}
+.c-icon--logout:before {
+  content: "\e912";
+}
+.c-icon--flag:before {
+  content: "\e928";
+}
+.c-icon--add:before {
+  content: "\e900";
+}
+.c-icon--arrow-down:before {
+  content: "\e902";
+}
+.c-icon--arrow-left:before {
+  content: "\e903";
+}
+.c-icon--arrow-right:before {
+  content: "\e904";
+}
+.c-icon--arrow-up:before {
+  content: "\e906";
+}
+.c-icon--cancel-small:before {
+  content: "\e908";
+}
+.c-icon--cancel:before {
+  content: "\e909";
+}
+.c-icon--chevron-down:before {
+  content: "\e90d";
+}
+.c-icon--chevron-left:before {
+  content: "\e90e";
+}
+.c-icon--chevron-right:before {
+  content: "\e90f";
+}
+.c-icon--chevron-up:before {
+  content: "\e910";
+}
+.c-icon--delete:before {
+  content: "\e918";
+}
+.c-icon--disable:before {
+  content: "\e919";
+}
+.c-icon--duplicate:before {
+  content: "\e91b";
+}
+.c-icon--export:before {
+  content: "\e91d";
+}
+.c-icon--external:before {
+  content: "\e91e";
+}
+.c-icon--horizontal-dots:before {
+  content: "\e91f";
+}
+.c-icon--import:before {
+  content: "\e920";
+}
+.c-icon--notes:before {
+  content: "\e921";
+}
+.c-icon--refresh:before {
+  content: "\e923";
+}
+.c-icon--risk:before {
+  content: "\e924";
+}
+.c-icon--save:before {
+  content: "\e925";
+}
+.c-icon--search:before {
+  content: "\e926";
+}
+.c-icon--view:before {
+  content: "\e927";
+}

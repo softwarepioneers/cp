@@ -1,0 +1,27 @@
+.c-chart {
+  @include e-card;
+  width: 100%;
+  padding-top: spacing("normal"); 
+}
+
+.c-chart__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 spacing("normal");
+  margin-bottom: spacing("small");
+}
+
+.c-chart__header__title {
+  margin-left: auto;
+}
+
+.c-chart__date {
+  font-size: 12px;
+}
+
+.c-chart__data {
+  padding: spacing("small");
+  --border-color: $color-brand;
+}

@@ -1,0 +1,20 @@
+.c-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: (spacing("small") * 2);
+  border: 1px solid rgba(darken($color-primary, 30%), 0.15);
+  background: white;
+  padding: spacing("base");
+  margin: spacing("wide") auto;
+  width: 300px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c-help__icon {
+  fill: $color-primary;
+  width: 20px;
+  height: 20px;
+  margin-left: spacing("extra-small");
+}
